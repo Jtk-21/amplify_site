@@ -1,32 +1,77 @@
-<!DOCTYPE html>
-<html data-lt-installed=true style="" lang="en-US">
-<head>
-	<meta charset=utf-8>
-	<meta name=viewport content="width=device-width,initial-scale=1">
-	<meta name=theme-color content=#000000>
-	<meta name=description content="Joshua Nauman- Personal page">
-	<meta property=twitter:image content=/social-image.png>
-	<meta property=og:image content=/social-image.png>
-	<title>Joshua Nauman- Personal Page</title>
-	<link rel="stylesheet" href="main.css">
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-</head>
+<body class="welcome">
+  <span id="splash-overlay" class="splash"></span>
+  <span id="welcome" class="z-depth-4"></span>
+ 
+  <header class="navbar-fixed"> 
+    <nav class="row deep-purple darken-3">
+      <div class="col s12">
+        <ul class="right">
+          <li class="right">
+            <a href="" target="_blank" class="fa fa-facebook-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
+          </li>
+          <li class="right">
+            <a href="" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<body>
-	<noscript class=sf-hidden>You need to enable JavaScript to run this app!</noscript>
-	<div id=home class="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0 jumbotron jumbotron-fluid" style="overflow:hidden;background:rgba(0,0,0,0) linear-gradient(136deg,rgb(68,132,206),rgb(26,215,192),rgb(255,155,17),rgb(155,89,182),rgb(255,127,127),rgb(236,240,241)) repeat scroll 0% 0% / 1200% 1200%">
-	<div id=stars></div>
-		<div class="text-center container">
-			<h1 class=display-1>Joshua Nauman</h1>
-			<div class="Typist lead typist">Security Analyst | Software Development Hobbyist | Designer ツ</div>
-			<div class=p-5>
-				<a target=_blank rel="noopener noreferrer" aria-label="Joshua Nauman's GitHub" href=https://github.com/theenawman><i class="fab fa-github fa-3x socialicons"></i></a>
-				<a target=_blank rel="noopener noreferrer" aria-label="Joshua Nauman's LinkedIn" href=https://www.linkedin.com/in/joshua-nauman-918872a1/><i class="fab fa-linkedin fa-3x socialicons"></i></a>
-				<!-- <a target=_blank rel="noopener noreferrer" aria-label="Joshua Nauman's Twitter DMs" href=https://www.twitter.com/theenawman/><i class="fab fa-twitter fa-3x socialicons"></i></a> -->
-				
-			</div>
-			<a class="btn btn-outline-light btn-lg" role=button aria-label="Contact" href="mailto:madcap.knowing0p@icloud.com" target="_blank">Contact</a>
-		</div>
-	</div>
+  <main class="valign-wrapper">
+    <span class="container grey-text text-lighten-1 ">
+
+      <p class="flow-text">Welcome</p>
+      <h1 class="title grey-text text-lighten-3">Jtk21's Website</h1>
+
+      <blockquote class="flow-text">My little digital footprint</blockquote>
+
+      <div class="center-align">
+        <!-- Dropdown Trigger -->
+        <a class="btn dropdown-button" href="" data-activates="exams">hse exams<i class="material-icons right">expand_more</i></a>
+
+        <!-- Dropdown Structure -->
+        <ul id="exams" class="dropdown-content">
+          <li><a href="#!">GED&trade; Exam</a></li>
+          <li><a href="#!">HiSET&trade; Exam</a></li>
+          <li><a href="#!">TASC&trade; Exam</a></li>
+        </ul>
+        <!-- Dropdown Trigger -->
+        <a class="btn dropdown-button" href="" data-activates="study">study<i class="material-icons right">expand_more</i></a>
+
+        <!-- Dropdown Structure -->
+        <ul id="study" class="dropdown-content">
+          <li><a href="#!">mathematics</a></li>
+          <li><a href="#!">reading</a></li>
+          <li><a href="#!">science</a></li>
+          <li><a href="#!">social studies</a></li>
+          <li><a href="#!">writing</a></li>
+        </ul>
+      </div>
+
+    </span>
+  </main>
+
+  <div class="fixed-action-btn">
+    <a href="#message" class="modal-trigger btn btn-large btn-floating amber waves-effect waves-light">
+      <i class="large material-icons">message</i>
+    </a>
+  </div>
+
+  <div id="message" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Contact</h4>
+      <p>coming soon...</p>
+    </div>
+    <div class="modal-footer">
+      <a href="" class="modal-action modal-close waves-effect btn-flat">close</a>
+    </div> 
+  </div> 
+
+  <footer class="page-footer deep-purple darken-3">
+    <div class="footer-copyright deep-purple darken-4">
+      <div class="container">
+        <time datetime="{{ site.time | date: '%Y' }}">&copy; 2016 Jason</time>
+      </div>
+    </div>
+  </footer>
 </body>
-</html>
