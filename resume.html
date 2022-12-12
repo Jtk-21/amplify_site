@@ -17,7 +17,7 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('/Users/emilykosidowski/Desktop/Jake TAP/jake_html_resume/background.jpg');
+    background: url('/home/kos/Desktop/vs-code/cyber.jpg');
     background-size:cover;
     position:relative;
 }
@@ -42,16 +42,19 @@
 }
 /* skills section css */
 .skillsText {
-    height: 280px;
+    height: 200px;
     cursor: default;
  }
- .cert {
-  height: fit-content;
-  cursor: default;
-  padding: 1em;
-  border-radius:15px;
- }
+.certText {
+    height: 305px;
+    cursor: default;
+}
 .skillsIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.certIcon {
     font-size: 36px;
     text-align: center;
     width: 100%;
@@ -68,6 +71,9 @@
 .skillsText:hover {
     border: 1px solid #008000;
 }
+.certText:hover {
+    border: 1px solid #008000;
+}
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: black;
@@ -77,15 +83,24 @@
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+.fa-linkedin:hover, .fa-github:hover, .fa-book:hover {
     color: #008000;
 }
-.fab {
+.fab, .fa {
     color: #000000;
+}
+.footerlink {
+    color: black;
+    font-size: 18pt;
+    padding-left: 25px; 
+}
+i {
+    font-size: 28pt !important;
+    padding-left: 5px;
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
+    /*background-color: #808080; */
     text-align: center;
 }
 </style>
@@ -139,7 +154,7 @@
             <h1 class="text-center">About Me</h1>
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <img src="/Users/emilykosidowski/Desktop/Jake TAP/jake_html_resume/IMG_2502.jpg" class= "imageAboutPage" alt="">
+                    <img src="/home/kos/Desktop/vs-code/cyber.jpg" class= "imageAboutPage" alt="">
                 </div>
                 <div class="col-lg-8">
                   <div class="row mt-3">
@@ -152,12 +167,12 @@
                     <!--
                     <div class="col-md-6">
                         <ul>
-                            <li>Name: David Parker</li>
-                            <li>Age: 28</li>
-                            <li>Occupation: Web Developer</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
                     </div>
-                  -->
+                    -->
                 </div>
                   <div class="row mt-3">
                     <p>Cybersecurity Professional with 9 years of experience institutionalizing operational rigor through policy, ensuring critical information flows through Knowledge Management, implementing security & hunting solutions, and developing cybersecurity training and range environments. Highly proficient in network threat hunting, SIEM toolkits, log ingestion, forensics, and cyber defensive actions. Driven & motivated to implement my skillset within a rapidly-evolving cybersecurity domain.</p>
@@ -174,41 +189,79 @@
             <h1 class="text-center">Certifications & Training</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="cert">
+                    <div class="card certText">
                         <div class="card-body">
                             <!--<i class="fas servicesIcon fa-clock"></i>-->
                             <div style="position:absolute; left:50%; padding:5px;">
                             <h4 class="card-title mt-3">GNFA</h4>
-                            <!--
                             <p class="card-text mt-3">GIAC Network Forensic Analyst (<a href="https://www.giac.org/certifications/network-forensic-analyst-gnfa/">GNFA</a>)</p>
                             <p class="card-text mt-3"><a href="https://www.sans.org/cyber-security-courses/advanced-network-forensics-threat-hunting-incident-response/">FOR572</a>: Advanced Network Forensics: Threat Hunting, Analysis, and Incident Response</p>
-                            -->
                             </div>
-                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6c95ab33-11bb-486d-865b-ea473e8b5c68" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6c95ab33-11bb-486d-865b-ea473e8b5c68" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
                         </div>
                     </div>  
                 </div>
                 <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
+                    <div class="card certText">
                         <div class="card-body">
                             <!--<i class='fas servicesIcon fa-layer-group'></i>-->
-                            <h4 class="card-title mt-3">Network Security</h4>
-                            <p class="card-text mt-3">Info..</p>
+                            <div style="position:absolute; left:50%; padding:5px;">
+                                <h4 class="card-title mt-3">GCDA</h4>
+                                <p class="card-text mt-3">GIAC Certified Detection Analyst (<a href="https://www.giac.org/certifications/certified-detection-analyst-gcda/">GCDA</a>)</p>
+                                <p class="card-text mt-3"><a href="https://www.sans.org/cyber-security-courses/siem-with-tactical-analytics/">SEC555</a>: SIEM with Tactical Analysis</p>
+                            </div>
+                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e8d8690d-f1e1-4cd8-8d80-af065935e302" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
                         </div>
                     </div>  
                 </div>
                 <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
+                    <div class="card certText">
                         <div class="card-body">
-                            <!--<i class='far servicesIcon fa-check-circle'></i>-->
-                            <h4 class="card-title mt-3">Vulnerability Analysis</h4>
-                            <p class="card-text mt-3">Info..</p>
+                            <div style="position:absolute; left:50%; padding:5px;">
+                                <h4 class="card-title mt-3">GDAT</h4>
+                                <p class="card-text mt-3">GIAC Defending Advanced Threats (<a href="https://www.giac.org/certifications/defending-advanced-threats-gdat/">GDAT</a>)</p>
+                                <p class="card-text mt-3"><a href="https://www.sans.org/cyber-security-courses/defeating-advanced-adversaries-kill-chain-defenses/"">SEC599</a>: Defeating Advanced Adversaries - Purple Team Tactics & Kill Chain Defenses</p>
+                            </div>
+                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="715e039e-27b8-4001-a25f-ffe132717783" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card certText">
+                        <div class="card-body">
+                            <div style="position:absolute; left:50%; padding:5px;">
+                                <h4 class="card-title mt-3">Security+</h4>
+                                <p class="card-text mt-3">CompTIA Security+ (<a href="https://www.comptia.org/certifications/security">Sec+</a>)</p>
+                            </div>
+                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b5e03362-0601-4a44-9f93-51a2d48123c2" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card certText">
+                        <div class="card-body">
+                            <div style="padding:5px;">
+                                <h4 class="card-title mt-3">Elastic Engineer</h4>
+                                <p class="card-text mt-3">Elastic Engineer (<a href="https://www.elastic.co/training/elasticsearch-engineer">Elastic Engineer</a>)</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card certText">
+                        <div class="card-body">
+                            <div style="padding:5px;">
+                                <h4 class="card-title mt-3">GREM</h4>
+                                <p class="card-text mt-3">GIAC Reverse Engineering Malware (<a href="https://www.giac.org/certifications/reverse-engineering-malware-grem/">GREM</a>)</p>
+                                <p class="card-text mt-3"><a href="https://www.sans.org/cyber-security-courses/reverse-engineering-malware-malware-analysis-tools-techniques/">FOR610</a>: Reverse-Engineering Malware: Malware Analysis Tools and Techniques</p>
+                                <p class="card-text mt-3">Currently enrolled in course.  Scheduled completion 2023Q2.</p>
+                            </div>
                         </div>
                     </div>  
                 </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
     <!-- services section-->
     <section id="skills">
@@ -344,7 +397,7 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                      <img class="card-img-top" src="/Users/emilykosidowski/Desktop/Jake TAP/jake_html_resume/background.jpg" alt="Card image" style="width:100%">
+                      <img class="card-img-top" src="/home/kos/Desktop/vs-code/cyber.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">YouTube Clone</h4>
                             <p class="card-text">This project is a placedholer test item for website design purposes.</p>
@@ -357,7 +410,7 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="/Users/emilykosidowski/Desktop/Jake TAP/jake_html_resume/background.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="/home/kos/Desktop/vs-code/cyber.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Quiz App</h4>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -370,7 +423,7 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="/Users/emilykosidowski/Desktop/Jake TAP/jake_html_resume/background.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="/home/kos/Desktop/vs-code/cyber.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Product Landing Page</h4>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -385,7 +438,7 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="/home/kos/Desktop/vs-code/cyber.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Messaging Service</h4>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -398,7 +451,7 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="/home/kos/Desktop/vs-code/cyber.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Twitter Clone</h4>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -411,7 +464,7 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="/home/kos/Desktop/vs-code/cyber.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Blog App</h4>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -466,11 +519,9 @@
         <div class="container-fluid">
             <!-- social media icons -->
             <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+                <a class="footerlink" href="https://www.linkedin.com/in/jtk21-cybersec/" target="_blank">linkedin<i class="fab fa-linkedin"></i></a>
+                <a class="footerlink" href="https://github.com/Jtk-21" target="_blank">github<i class="fab fa-github"></i></a>
+                <a class="footerlink" href="https://notes.jtk21-cybersec.xyz/" target="_blank">gitbook<i class="fa fa-book"></i></a>
             </div>
         </div>
     </footer>
