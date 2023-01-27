@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+   <title>About Me</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- linking css file -->
+   <link rel="stylesheet" href="style.css">
+   <!-- bootstrap CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- font awesome -->
+   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Resume</title>
+	<meta name="description" content="Leah Helgeson Resume">
+	<meta name="author" content="Leah Helgeson">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+<style>
+   body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100%;
+       width: 100%;
+       overflow-y: scroll;
+   }
+   @keyframes gradient {
+      0% {
+         background-position: 0% 50%;
+      }
+      50% {
+         background-position: 100% 50%;
+      }
+      100% {
+         background-position: 0% 50%;
+      }
+   }
+   .hero_title {
+       font-size: 4.5rem;
+       color: white;
+   }
+   .hero_desc {
+       font-size: 2rem;
+       margin: 0 0 0 0;
+
+   }
+   .hero-text {
+       text-align: center;
+       color: white;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+
+   }
+   .imageAboutPage {
+       width: 100%;
+       clip-path: circle();
+   }
+   /* skills section css */
+   .skillsText {
+       height: 200px;
+       cursor: default;
+    }
+   .certText {
+       height: 305px;
+       cursor: default;
+   }
+   .skillsIcon {
+       font-size: 36px;
+       text-align: center;
+       width: 100%;
+   }
+   .certIcon {
+       font-size: 36px;
+       text-align: center;
+       width: 100%;
+   }
+   .card-title {
+       text-align: center;
+   }
+   .card {
+     border-radius:15px;
+     background-color: #f0e9e7;
+   }
+   .card:hover .skillsIcon {
+       color: black;
+   }
+   .skillsText:hover {
+       border: 1px solid black;
+   }
+   .certText:hover {
+       border: 1px solid black;
+   }
+   /* display background color black on navbar scroll */
+   .navbarScroll.navbarDark {
+       background-color: #000000;
+   }
+   .fa-linkedin:hover, .fa-github:hover, .fa-book:hover {
+       color: blue;
+   }
+   .fab, .fa {
+       color: white;
+   }
+   .footerlink {
+       color: white;
+       font-size: 18pt;
+   }
+   i {
+       font-size: 28pt !important;
+       padding-left: 5px;
+   }
+   .headerfont {
+       font-size: 16pt;
+   }
+   /* footer styling */
+   .footer {
+       text-align: center;
+       padding-top: 5px;
+   }
+   li {
+      margin-left: 15px;
+   }
+   </style>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+      <div class="container">
+          <a class="navbar-brand headerfont" href="#">Jake</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link headerfont headerlinks" style="color:white" href="#home">Home</a>
+                  </li>
+                  <div style="width:20px;"></div>
+                  <li class="nav-item">
+                      <a class="nav-link headerfont" style="color:white" href="#about">About</a>
+                  </li>
+                  <div style="width:20px;"></div>
+                  <li class="nav-item">
+                     <a class="nav-link headerfont" style="color:white" href="#educert">Education - Certifications - Training</a>
+                 </li>
+                 <div style="width:20px;"></div>
+                  <li class="nav-item">
+                     <a class="nav-link headerfont" style="color:white" href="#work">Work</a>
+                 </li>
+                 <div style="width:20px;"></div>
+                  <li class="nav-item">
+                      <a class="nav-link headerfont" style="color:white" href="#skills">Skills</a>
+                  </li>
+                  <div style="width:20px;"></div>
+                  <li class="nav-item">
+                      <a class="nav-link headerfont" style="color:white" href="#links">Links</a>
+                  </li>
+              </ul>
+              
+          </div>
+      </div>
+  </nav>
+  <!-- main banner -->
+  <section id="home">
+      <div class="container" style="height: 100vh;">
+          <div class="row">
+          <div class="hero-text">
+              <h2 class="hero_title">Jacob Kosidowski</h2>
+              <p class="hero_desc">Network Analysis | Threat Hunting | SIEM Management | Reverse Engineering | Purple Team</p>
+              <p class="hero_desc">GNFA | GCDA | GDAT | GREM | Security+</p>
+          </div>
+          </div>
+      </div>
+  </section>
+  <br>
+
+    <!-- about section-->
+    <section id="about">
+      <br>
+      <div class="container mt-4 pt-4" style="color:#fff;">
+          <h1 class="text-center">About Me</h1>
+          <div class="row mt-4 align-items-center">
+              <div class="col-lg-4">
+                  <img src="./images/kos.jpg" class= "imageAboutPage" alt="Broke">
+              </div>
+              <div class="col-lg-8">
+                  <div class="row mt-3 align-items-center">
+                      <div class="col-md-6">
+                          <ul>
+                              <li>Name: Jacob Kosidowski</li>
+                              <li>Location: Greater St. Louis Area</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="row mt-3 align-items-center">
+                      <p>Cybersecurity Professional with 9 years of experience institutionalizing operational rigor through policy, ensuring critical information flows through Knowledge Management, implementing security & hunting solutions, and developing cybersecurity training and range environments. Highly proficient in network threat hunting, SIEM toolkits, log ingestion, forensics, and cyber defensive actions. Driven & motivated to implement my skillset within a rapidly-evolving cybersecurity domain.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <br>
+  </section>
+
+  <div id="educert"></div>
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+         <div class="three columns header-col">
+            <h1><span>Education &</span></h1>
+            <h1><span>Certifications</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>B.S. Cybersecurity and Information Assurance (In Progress)</h3>
+                  <p class="info">Western Governors University<span>&bull;</span> <em class="date">Apr 23 - Oct 23</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Associates in Cybersecurity</h3>
+                  <p class="info">Community College of the Air Force<span>&bull;</span> <em class="date">Nov '20</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Associates in Business Administration</h3>
+                  <p class="info">Community College of the Air Force<span>&bull;</span> <em class="date">Oct '20</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <!--Credly Card's-->
+            <div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="6c95ab33-11bb-486d-865b-ea473e8b5c68" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+            <div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="e8d8690d-f1e1-4cd8-8d80-af065935e302" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+            <div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="715e039e-27b8-4001-a25f-ffe132717783" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+            <div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="b5e03362-0601-4a44-9f93-51a2d48123c2" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Notable Training</h3>
+                  <p class="info">GIAC Reverse Enginering Malware<span>&bull;</span> <em class="date">Currently Enrolled</em></p>
+                  <p class="info">Elastic Engineer<span>&bull;</span> <em class="date"></em>May '21</p>
+
+               </div>
+
+            </div> <!-- item end -->
+         </div> <!-- main-col end -->
+         
+      </div> <!-- End Education -->
+
+      <div id="work" style="scroll-margin-top: 80px !important;"></div>
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Flight Chief, Weapons & Tactics</h3>
+                  <p class="info">USAF/837th Cyber Operations Squadron <span>&bull;</span> <em class="date">Dec '21 - Present</em></p>
+
+                  <p>
+                     - Subject matter expert in network analysis, SIEM operations, and threat hunting that is uniquely qualified to mentor junior analysts in developing and employing new tactics, techniques, and procedures to advance defense posture. <br>
+                     - Responsible for advising senior leaders on training gaps, standards for weapon systems, and tracking the tactical mission assessments and lessons learned. <br>
+                     - Maintains record of recommendations and deficiencies to support the improvement of tactical cyber defense tools, systems, and equipment. <br>
+                     - Authored numerous policy documents outlining standard operating procedures & best practices for effective cyber threat hunting operations.) <br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Mission Element Lead/Cyber Crew Lead</h3>
+                  <p class="info">USAF/837th Cyber Operations Squadron <span>&bull;</span> <em class="date">Aug '20 - Dec '21</em></p>
+
+                  <p>
+                     - Led execution of defensive cyber operations conducting data collection & analysis, identification/hunt of adversarial techniques, and environment hardening actions. <br>
+                     - Responsible for team management, accountability, training, mission travel, and day-to-day operations to ensure team readiness and capability. <br>
+                     - Effective communicator leveraging project management skills to oversee critical defensive campaigns involving many joint defense partners and agencies. <br>
+                     - Operate effectively and make decisions under high stress situations that can impact large-scale networks, personnel, and organizations. <br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Network Analyst/Threat Hunter</h3>
+                  <p class="info">USAF/837th Cyber Operations Squadron <span>&bull;</span> <em class="date">May '19 - Jul '20</em></p>
+
+                  <p>
+                     - Lead Network Analyst for DoD CPT overseeing Hunt, Clear, Harden, and Assessment functions <br>
+                     - Developed & Executed CTE Phishing Campaign - attack vector, email content, delivery - across an organization and provided remedial training on how to identify indicators of Phishing <br>
+                     - Driven toolkit SME that can rapidly develop/adjust data collection, enrichment, and aggregation tools to provide clear terrain picture for teams <br>
+                     - Cyber Protection Team Instructor & Evaluator responsible for ensuring team members are properly trained and can demonstrate required skills during operations <br>
+                     - Excellent communicator responsible for providing both technical and management level briefings to partners post-operation to relay findings & recommendations <br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>NCOIC, Knowledge Management Center/Requirements</h3>
+                  <p class="info">USAF/30th Space Wing <span>&bull;</span> <em class="date">Apr '16 - Apr '19</em></p>
+
+                  <p>
+                     - Responsible for directing operations and supervising a 10-member team to provide services to a 47 Organizations and 6000 personnel <br>
+                     - Led Base Records Management program and ensure proper records maintenance and end-of-year staging actions in accordance with NARA/DoD standards <br>
+                     - Oversaw $3M Enterprise Information Management platform hosting 670 sites and liaised with senior leaders to resolve communication shortfalls <br>
+                     - Managed, tracked, and ensured timelines were met for 1100 Projects across 47 Wing organizations <br>
+                     - Installation Freedom of Information Act (FOIA) & Privacy Act program lead ensuring federal program compliance, Personal Information protection, & proper information release/redaction <br>
+                     - Proven record of improving operations, streamlining data sharing capabilities, and mentoring junior Airmen <br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Knowledge Management</h3>
+                  <p class="info">USAF/30th Space Wing <span>&bull;</span> <em class="date">Jul '13 - Mar '16</em></p>
+
+                  <p>
+                     - Developed Publications tracker streamlining visibility for over 300 instructions aiding rapid documentation updates to support space launch operations <br>
+                     - Resolved data corruption/loss issues within MS Access database leveraged by Fire Department to track all emergency calls and response actions <br>
+                     - Built SharePoint-hosted visual dashboards for Installation Programs which increased visibility for senior leaders and highlighted critical gaps in operation effectiveness and/or capability <br>
+                     - Led Personally Identifiable Information (PII) data breach team to successfully identify, secure, and recover all leaked data through coordination with local law enforcement and base authorities <br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+      <div id="skills" style="scroll-margin-top: 20px !important;"></div>
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>General</h3>
+
+                  <p>
+                  - Effective Communicator, Project Management, Instruction, Critical Thinking <br>
+                  - Time Management, Task Prioritization, Conflict Management
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Technical</h3>
+
+                  <p>
+                  - Blue & Purple Team Operations, Cyber Threat Emulation <br>
+                  - ELK Stack, Security Onion, Arkime, Malcolm, Docker, Kubernetes & Helm, AWS Security Tools, MS Office Suite <br>
+                  - Network Security, Network Traffic Analysis, Cyber Threat Analysis & Hunting <br>
+                  - Vulnerability Analysis, Reverse Engineering, Windows & Linux-based Operating Systems <br>
+                  - Communication / Incident Management Tools (Rocketchat, Mattermost, theHive, Redmine)
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Scripting / Code</h3>
+
+                  <p>
+                  - Python (Intermediate) <br>
+                  - Powershell (Intermediate) <br>
+                  - Bash (Intermediate) <br>
+                  - HTML, CSS, JS (Basic Web Design/Usage)
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+      </div> <!-- End Awards and Activities -->
+
+   </section> <!-- Resume Section End-->
+
+         <section class="footer" id="links" style="background-color: #000000";>
+            <a class="footerlink" href="https://www.linkedin.com/in/jtk21-cybersec/" target="_blank">linkedin<i class="fab fa-linkedin"></i></a>
+            <a class="footerlink" href="https://github.com/Jtk-21" target="_blank">github<i class="fab fa-github"></i></a>
+            <a class="footerlink" href="https://notes.jtk21-cybersec.xyz/" target="_blank">gitbook<i class="fa fa-book"></i></a>
+    </section>
+
+    <script>
+      // add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
+window.onscroll = function() {
+  var top = window.scrollY;
+  if(top >=100) {
+      header.classList.add('navbarDark');
+  }
+  else {
+      header.classList.remove('navbarDark');
+  }
+}
+</script>
+</body>
+</html>
